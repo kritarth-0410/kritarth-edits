@@ -3,73 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kritarth's Edits</title>
+  <title>Kritarth's Viral Edits</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
       background-color: #111;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-      text-align: center;
     }
+
     h1 {
-      margin: 20px 0;
+      text-align: center;
       color: #00ffff;
+      margin: 30px 0;
     }
-    .video-container {
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 30px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .video-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 40px;
-      padding: 20px;
     }
+
     .video-card {
       width: 100%;
-      max-width: 400px;
-      aspect-ratio: 9/16;
-      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+      aspect-ratio: 9 / 16;
+      background-color: #000;
       border-radius: 12px;
       overflow: hidden;
-      background-color: #000;
+      box-shadow: 0 0 15px rgba(0,255,255,0.15);
     }
+
     iframe {
       width: 100%;
       height: 100%;
       border: none;
     }
+
     .caption {
-      margin-top: 8px;
+      margin-top: 10px;
+      text-align: center;
       font-size: 0.95em;
       color: #ccc;
-    }
-    @media (max-width: 500px) {
-      .caption {
-        font-size: 0.85em;
-      }
     }
   </style>
 </head>
 <body>
+
   <h1>Kritarth's Viral Edits</h1>
 
-  <div class="video-container">
-    
+  <div class="video-grid">
+
     <!-- VIDEO 1 -->
-    <div class="video-card">
-      <iframe src="https://www.youtube.com/embed/eaWA9gEEjTU" allowfullscreen></iframe>
+    <div class="video-wrapper">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/eaWA9gEEjTU" allowfullscreen></iframe>
+      </div>
+      <div class="caption">🔥 BMW M4 Edit — Clean Sync + Phonk Vibes</div>
     </div>
-    <div class="caption">🔥 BMW M4 Edit — Clean Sync + Phonk Vibes</div>
 
     <!-- VIDEO 2 -->
-    <div class="video-card">
-      <iframe src="https://www.youtube.com/embed/cY5d-UoLTYM" allowfullscreen></iframe>
+    <div class="video-wrapper">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/cY5d-UoLTYM" allowfullscreen></iframe>
+      </div>
+      <div class="caption">⚡ BMW M3 Edit — Beat Drop + Power</div>
     </div>
-    <div class="caption">⚡ BMW M3 Edit — Beat Drop + Power</div>
 
-    <!-- NEXT TIME: -->
+    <!-- ✅ Add more videos below -->
+    <!--
+    <div class="video-wrapper">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      </div>
+      <div class="caption">Your caption here</div>
+    </div>
+    -->
 
   </div>
+
 </body>
 </html>
-
