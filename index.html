@@ -19,6 +19,7 @@
       text-align: center;
       color: #00ffff;
       margin: 30px 0;
+      font-family: "Poppins";
     }
 
     .video-grid {
@@ -62,15 +63,74 @@
       color: #00ffff;
       font-weight: bold;
     }
+
+    footer {
+      background: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff4444;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #1a1a1a;
+    }
+
+    .navbar h1 {
+      color: #ff4444;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #aaa;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #fff;
+    }
   </style>
 </head>
 
 <body>
+  <header>
+    <nav class="navbar">
+      <h1>Kritarth Edits</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.youtube.com/@Editsby_0410" target="_blank">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/kritarth-bhargava" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/kritarth-0410" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Edits By Kritarth</h1>
+  <!-- <h1>Edits By Kritarth</h1> -->
 
   <div class="video-grid">
-    
+
     <!-- VIDEO -->
     <div class="video-wrapper">
       <div class="video-card">
@@ -95,7 +155,7 @@
       <div class="caption">🚘 BMW M4 G82 Normal Edit on Viral Phonk </div>
     </div>
 
-     <!-- VIDEO -->
+    <!-- VIDEO -->
     <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/44NTHWHhgNM?enablejsapi=1" allowfullscreen></iframe>
@@ -103,7 +163,7 @@
       <div class="caption">🚘 BMW M5 Competition Choice Edit 🥵🔥</div>
     </div>
 
-     <!-- VIDEO -->
+    <!-- VIDEO -->
     <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/6MP5BLpnVnw?enablejsapi=1" allowfullscreen></iframe>
@@ -111,38 +171,36 @@
       <div class="caption">🚘 Normal phone launched 🥶☠️ </div>
     </div>
 
-     <!-- VIDEO -->
+    <!-- VIDEO -->
 
-     <div class="video-wrapper">
+    <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/AYFhnEySLEA?enablejsapi=1" allowfullscreen></iframe>
       </div>
       <div class="caption">🚘 BMW M5 Aura Moment Edit ☠️ </div>
     </div>
-    
-     <!-- VIDEO -->
-    
-     <div class="video-wrapper">
+
+    <!-- VIDEO -->
+
+    <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/SMKkw5yP-u4?enablejsapi=1" allowfullscreen></iframe>
       </div>
       <div class="caption"> Baap moments by casetoo 🥶☠️ </div>
     </div>
-    
-     <!-- VIDEO -->
 
-     <div class="video-wrapper">
+    <!-- VIDEO -->
+
+    <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/2aWYSgehlDc?enablejsapi=1" allowfullscreen></iframe>
       </div>
       <div class="caption"> The Beauty mens fall for 🥵😈 </div>
     </div>
-    
-     <!-- VIDEO -->
 
-     <!-- VIDEO -->
+    <!-- VIDEO -->
 
-     <div class="video-wrapper">
+    <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/ERNy_ndlRVo?enablejsapi=1" allowfullscreen></iframe>
       </div>
@@ -151,51 +209,82 @@
 
     <!-- VIDEO -->
 
-     <div class="video-wrapper">
+    <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/55utmCPhlgg?enablejsapi=1" allowfullscreen></iframe>
       </div>
-      <div class="caption"> RIP ELECTRIC 🤡  </div>
+      <div class="caption"> RIP ELECTRIC 🤡 </div>
     </div>
 
     <!-- VIDEO -->
 
-     <div class="video-wrapper">
+    <div class="video-wrapper">
       <div class="video-card">
         <iframe src="https://youtube.com/embed/PN5630pSo4Y?enablejsapi=1" allowfullscreen></iframe>
       </div>
       <div class="caption"> W BMW AURA 🥵 </div>
     </div>
-    
-     <!-- VIDEO -->
+
+    <!-- VIDEO -->
+
+    <div class="video-wrapper">
+      <div class="video-card">
+        <iframe src="https://youtube.com/embed/3E555cZ08Bc?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+      <div class="caption"> W Sigma Boy 😎 </div>
+    </div>
+
+    <!-- VIDEO -->
+
+    <div class="video-wrapper">
+      <div class="video-card">
+        <iframe src="https://youtube.com/embed/7kGQj5ntq3g?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+      <div class="caption"> BMW Infinity ♾️ AURA  </div>
+    </div>
+
+    <!-- VIDEO -->
   </div>
-
   <script>
-    const players = [];
+    document.addEventListener("DOMContentLoaded", () => {
+      const iframes = document.querySelectorAll("iframe");
 
-    function onYouTubeIframeAPIReady() {
-      document.querySelectorAll("iframe").forEach((iframe, index) => {
-        const player = new YT.Player(iframe, {
-          events: {
-            'onStateChange': function (event) {
-              if (event.data === YT.PlayerState.PLAYING) {
-                players.forEach((p, i) => {
-                  if (i !== index && p.getPlayerState() === YT.PlayerState.PLAYING) {
-                    p.pauseVideo();
-                  }
-                });
-              }
-            }
-          }
+      iframes.forEach((iframe, index) => {
+        iframe.addEventListener("load", () => {
+          iframe.contentWindow.postMessage('{"event":"listening","id":' + index + '}', '*');
         });
-        players.push(player);
       });
-    }
 
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    document.body.appendChild(tag);
+      window.addEventListener("message", (event) => {
+        if (event.data && typeof event.data === "string" && event.data.includes("infoDelivery")) {
+          try {
+            const data = JSON.parse(event.data);
+            if (data.info && data.info.playerState === 1) { // 1 = PLAYING
+              const activeIframe = document.querySelectorAll("iframe")[data.id];
+              document.querySelectorAll("iframe").forEach((iframe, i) => {
+                if (i !== data.id) {
+                  iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                }
+              });
+            }
+          } catch (e) {
+            console.error("Error parsing message", e);
+          }
+        }
+      });
+    });
   </script>
+  <footer>
+    <p>© Kritarth Edits | Contact:
+      <a href="mailto:business.kritarth04@gmail.com">business.kritarth04@gmail.com</a>
+    </p>
+    <p>
+      <a href="https://www.youtube.com/@Editsby_0410" target="_blank">YouTube</a> |
+      <a href="https://www.linkedin.com/in/kritarth-bhargava" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/kritarth-0410" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
 </body>
 
 </html>
