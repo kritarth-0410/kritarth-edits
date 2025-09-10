@@ -2,68 +2,111 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edits By Kritarth</title>
-
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #111;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
+      background: #111;
       color: #fff;
     }
 
+
     h1 {
+      font-family: "montserrat";
       text-align: center;
-      color: #00ffff;
-      margin: 30px 0;
-      font-family: "Poppins";
+      color: #ff4444;
+      margin: 20px 0;
+      font-size: 60px;
     }
 
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      padding: 30px;
-      max-width: 1400px;
-      margin: auto;
+    /* Navbar */
+    nav {
+      background: #222;
+      padding: 10px 0;
+      margin: 30px;
+      /* max-width: 900px; */
     }
 
-    .video-wrapper {
+    nav ul {
+      list-style: none;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
+      /* center navbar */
+      margin: 0;
+      padding: 0;
+      gap: 45px;
     }
 
-    .video-card {
-      width: 100%;
-      aspect-ratio: 9 / 16;
-      background-color: #000;
-      border-radius: 12px;
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff4444;
+    }
+
+    /* Accordion */
+    .accordion {
+      max-width: 900px;
+      margin: 0px auto;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #333;
+    }
+
+    .accordion-header {
+      background: #222222;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .accordion-header:hover {
+      background: #333;
+      color: #ff4444;
+    }
+
+    .accordion-content {
+      max-height: 0;
       overflow: hidden;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+      transition: max-height 0.3s ease-out;
+      background: #181818;
+      padding: 0 15px;
+      font-family: '  poppins';
     }
 
+    .accordion-content.open {
+      padding: 15px;
+    }
+
+    /* Shorts ratio */
     iframe {
       width: 100%;
-      height: 100%;
-      border: none;
+      aspect-ratio: 9 / 16;
+      /* vertical ratio */
+      margin: 20px 0;
+      border-radius: 15px;
+
+      /* Neon glow effect */
+      box-shadow: 0 0 13px #ff4444;
+      border: 0px solid #ff4444;
     }
 
-    .caption {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 0.95em;
-      color: #ccc;
-    }
 
-    .vibes {
-      color: #00ffff;
-      font-weight: bold;
-    }
 
+    /* Footer */
     footer {
       background: #1a1a1a;
       padding: 20px;
@@ -82,173 +125,88 @@
     footer a:hover {
       color: #fff;
     }
-
-
-    h1 {
-      text-align: center;
-      color: #00ffff;
-      margin: 20px 0;
-      font-size: 75px;
-    }
-
-    nav {
-      background-color: #1a1a1a;
-      padding: 15px 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 10;
-      padding: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #00ffff;
-    }
   </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <h1>Kritarth Edits</h1>
-      <ul>
-        <li><a href="https://www.youtube.com/@Editsby_0410" target="_blank">YouTube</a></li>
-        <li><a href="https://www.linkedin.com/in/kritarth-bhargava" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/kritarth-0410" target="_blank">GitHub</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>Kritarth Edits</h1>
 
-  <!-- <h1>Edits By Kritarth</h1> -->
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="https://youtube.com/@Editsby_0410" target="_blank">YouTube</a></li>
+      <li><a href="https://www.linkedin.com/in/kritarth-bhargava" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/kritarth-0410" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
 
-  <div class="video-grid">
-
-    <!-- VIDEO -->
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/cY5d-UoLTYM?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption">⚡ BMW M3 Edit — Beat Drop + Power</div>
-    </div>
-
-    <!-- VIDEO -->
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/8hLazO4xTs0?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption">🚘 BMW M4 Short Edit — Viral Phonk x Sync</div>
-    </div>
-
-    <!-- VIDEO -->
-    <div class="video-wrapper">
-      <div class="video-card">
+  <!-- Accordion Drawer -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">BMW Edits</div>
+      <div class="accordion-content">
+        <iframe src="https://youtube.com/embed/cY5d-UoLTYM?enablejsapi=1" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/8hLazO4xTs0?enablejsapi=1" allowfullscreen></iframe>
         <iframe src="https://youtube.com/embed/l8zOWY4y-e4?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption">🚘 BMW M4 G82 Normal Edit on Viral Phonk </div>
-    </div>
-
-    <!-- VIDEO -->
-    <div class="video-wrapper">
-      <div class="video-card">
         <iframe src="https://youtube.com/embed/44NTHWHhgNM?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption">🚘 BMW M5 Competition Choice Edit 🥵🔥</div>
-    </div>
-
-    <!-- VIDEO -->
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://youtube.com/embed/6MP5BLpnVnw?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption">🚘 Normal phone launched 🥶☠️ </div>
-    </div>
-
-    <!-- VIDEO -->
-
-    <div class="video-wrapper">
-      <div class="video-card">
         <iframe src="https://youtube.com/embed/AYFhnEySLEA?enablejsapi=1" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/2aWYSgehlDc?enablejsapi=1" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/ERNy_ndlRVo?enablejsapi=1" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/55utmCPhlgg?enablejsapi=1" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/PN5630pSo4Y?enablejsapi=1" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/7kGQj5ntq3g?enablejsapi=1" allowfullscreen></iframe>
+        <iframe src="https://youtube.com/embed/qilioN9Kw1A?enablejsapi=1" allowfullscreen></iframe>
       </div>
-      <div class="caption">🚘 BMW M5 Aura Moment Edit ☠️ </div>
     </div>
 
-    <!-- VIDEO -->
 
-    <div class="video-wrapper">
-      <div class="video-card">
+  </div>
+  <div class="accordion">
+
+    <div class="accordion-item">
+      <div class="accordion-header">Casetoo Edits</div>
+      <div class="accordion-content">
         <iframe src="https://youtube.com/embed/SMKkw5yP-u4?enablejsapi=1" allowfullscreen></iframe>
       </div>
-      <div class="caption"> Baap moments by casetoo 🥶☠️ </div>
     </div>
 
-    <!-- VIDEO -->
 
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://youtube.com/embed/2aWYSgehlDc?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption"> The Beauty mens fall for 🥵😈 </div>
-    </div>
-
-    <!-- VIDEO -->
-
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://youtube.com/embed/ERNy_ndlRVo?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption"> BMW 🥵 vs Labubu 💩 Viral Edit </div>
-    </div>
-
-    <!-- VIDEO -->
-
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://youtube.com/embed/55utmCPhlgg?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption"> RIP ELECTRIC 🤡 </div>
-    </div>
-
-    <!-- VIDEO -->
-
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://youtube.com/embed/PN5630pSo4Y?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption"> W BMW AURA 🥵 </div>
-    </div>
-
-    <!-- VIDEO -->
-
-    <div class="video-wrapper">
-      <div class="video-card">
+    <div class="accordion-item">
+      <div class="accordion-header">Other Edits</div>
+      <div class="accordion-content">
+        <iframe src="https://youtube.com/embed/6MP5BLpnVnw?enablejsapi=1" allowfullscreen></iframe>
         <iframe src="https://youtube.com/embed/3E555cZ08Bc?enablejsapi=1" allowfullscreen></iframe>
       </div>
-      <div class="caption"> W Sigma Boy 😎 </div>
     </div>
-
-    <!-- VIDEO -->
-
-    <div class="video-wrapper">
-      <div class="video-card">
-        <iframe src="https://youtube.com/embed/7kGQj5ntq3g?enablejsapi=1" allowfullscreen></iframe>
-      </div>
-      <div class="caption"> BMW Infinity ♾️ AURA </div>
-    </div>
-
-    <!-- VIDEO -->
   </div>
+
+
+  <script>
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+
+        // Close all open drawers
+        document.querySelectorAll(".accordion-content").forEach(c => {
+          if (c !== content) {
+            c.style.maxHeight = null;
+            c.classList.remove("open");
+          }
+        });
+
+        // Toggle clicked drawer
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          content.classList.remove("open");
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.classList.add("open");
+        }
+      });
+    });
+  </script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const iframes = document.querySelectorAll("iframe");
@@ -288,7 +246,6 @@
       <a href="https://github.com/kritarth-0410" target="_blank">GitHub</a>
     </p>
   </footer>
-
 </body>
 
 </html>
